@@ -1,0 +1,6 @@
+XTerm*termName: xterm-256color
+XTerm*saveLines: 65536
+XTerm*background: rgb:00/00/00
+XTerm*foreground: rgb:cc/cc/cc
+XTerm*faceName: Terminus:size=12
+
