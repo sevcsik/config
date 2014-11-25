@@ -41,7 +41,7 @@ end
 beautiful.init("~/.config/awesome/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm"
+terminal = "terminology"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -368,6 +368,8 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { name = "Hangouts" },
       properties = { floating = true, border_width = 0 } },
+	{ rule = { skip_taskbar = true },
+	  properties = { floating = true, border_width = 0 }}
       
     -- Set Firefox to always map on tags number 2 of screen 1.
     -- { rule = { class = "Firefox" },
