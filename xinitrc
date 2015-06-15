@@ -3,6 +3,6 @@
 /usr/bin/pulseaudio -D &
 /usr/bin/xrdb .xtermrc
 /usr/bin/devmon &
-/usr/bin/unagi &
-/usr/bin/awesome
+#/usr/bin/unagi &
+/usr/bin/xmonad
 
