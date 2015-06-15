@@ -3,6 +3,7 @@ import XMonad.Hooks.DynamicLog
 import XMonad.Layout.NoBorders
 import XMonad.Hooks.UrgencyHook
 import XMonad.Hooks.ManageDocks
+import XMonad.Hooks.EwmhDesktops
 import XMonad.Util.Run
 import System.IO
 
@@ -16,6 +17,7 @@ main = do
                                 , workspaces = workspaces'
                                 , logHook = log' pipe
                                 , manageHook = manage'
+                                , handleEventHook = handleEvent'
                                 }
 
     xmonad $ withUrgencyHook NoUrgencyHook $ config'
@@ -28,10 +30,12 @@ log' pipe = dynamicLogWithPP xmobarPP
 
 layout' = ( avoidStruts
           . smartBorders
-          . layoutHook
-          ) defaultConfig
+          ) (layoutHook defaultConfig)
 
-manage' = manageHook defaultConfig <+> manageDocks 
+manage' = manageDocks 
+
+handleEvent' = docksEventHook
+           <+> fullscreenEventHook
 
 workspaces' = [ "test" 
               , "dev"
