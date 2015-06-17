@@ -34,7 +34,8 @@ layout' = ( avoidStruts
 
 manage' = manageDocks 
 
-handleEvent' = docksEventHook
+handleEvent' = handleEventHook defaultConfig
+           <+> docksEventHook
            <+> fullscreenEventHook
 
 workspaces' = [ "test" 
