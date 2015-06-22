@@ -20,7 +20,8 @@ main = do
                                 , handleEventHook = handleEvent'
                                 }
 
-    xmonad $ withUrgencyHook NoUrgencyHook $ config'
+    xmonad $ ewmh 
+           $ (withUrgencyHook NoUrgencyHook) config'
 
 log' pipe = dynamicLogWithPP xmobarPP
     { ppCurrent = xmobarColor "yellow" ""
