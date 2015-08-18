@@ -4,6 +4,7 @@ import XMonad.Layout.NoBorders
 import XMonad.Hooks.UrgencyHook
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.EwmhDesktops
+import XMonad.Hooks.ManageHelpers ( doFullFloat, isFullscreen )
 import XMonad.Util.Run
 import System.IO
 
@@ -34,7 +35,9 @@ layout' = ( avoidStruts
           . smartBorders
           ) (layoutHook defaultConfig)
 
-manage' = manageDocks 
+manage' = ( isFullscreen --> doFullFloat)
+      <+> manageHook defaultConfig
+      <+> manageDocks 
 
 handleEvent' = handleEventHook defaultConfig
            <+> docksEventHook

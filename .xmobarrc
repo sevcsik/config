@@ -1,4 +1,52 @@
-Config {
-	font = "xft:Terminus:size=8"
-}
-
+Config 
+    { font = "xft:Terminus:size=8"
+    , template = " %StdinReader% }{ %whoami%@%hostname% | %uname% | %wlp4s0wi% | %dynnetwork% | %memory% | %cpufreq% | %coretemp% | %date%"
+    , commands =
+        [ Run StdinReader
+        , Run Wireless "wlp4s0" [ "-t", "<essid> <quality>"
+                                , "-p", "2"
+                                , "-L", "50"
+                                , "-H", "80"
+                                , "-l", "darkgrey"
+                                , "-n", "grey"
+                                , "-h", "white"
+                                , "-S", "True"
+                                ] 50
+        , Run DynNetwork [ "-t", "<dev>: <rx> <tx> KiB/s"
+                         , "-L", "100000"
+                         , "-H", "1000000"
+                         , "-l", "darkgrey"
+                         , "-n", "grey"
+                         , "-h", "white"
+                         , "-m", "5"
+                         ] 10
+        , Run Memory [ "-t", "<used> MiB"
+                     , "-L", "8000"
+                     , "-H", "14000"
+                     , "-l", "darkgrey"
+                     , "-n", "grey"
+                     , "-h", "white"
+                     , "-m", "5"
+                     ] 10
+        , Run CpuFreq [ "-t", "<cpu0> GHz"
+                      , "-w", "4"
+                      , "-L", "2"
+                      , "-H", "3"
+                      , "-l", "darkgrey"
+                      , "-n", "grey"
+                      , "-h", "white"
+                      ] 10
+        , Run CoreTemp [ "-t", "<core0> °C"
+                       , "-L", "75"
+                       , "-H", "85"
+                       , "-l", "darkgrey"
+                       , "-n", "grey"
+                       , "-h", "red"
+                       , "-S", "True"
+                       ] 10
+        , Run Com "uname" ["-r", "-s"] "uname" 0 
+        , Run Com "hostname" [] "hostname" 0
+        , Run Com "whoami" [] "whoami" 0
+        , Run Date "%Y %B %d %R" "date" 600
+        ]
+    }
