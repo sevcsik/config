@@ -12,6 +12,7 @@ servers = (
     use_ssl = "yes";
     chatnet = "ircnet-znc";
     autoconnect = "true";
+	password = "sevcsik@HOSTNAME/ircnet:PASSWORD";
   },
   {
     address = "sevdev.hu";
@@ -19,13 +20,15 @@ servers = (
     use_ssl = "yes";
     chatnet = "freenode-znc";
     autoconnect = "true";
-  },
+	password = "sevcsik@HOSTNAME/freenode:PASSWORD";
+  }
   {
     address = "sevdev.hu";
     port = "6697";
     use_ssl = "yes";
     chatnet = "gitter-znc";
     autoconnect = "true";
+	password = "sevcsik@HOSTNAME/gitter:PASSWORD";
   }
 );
 
