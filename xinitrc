@@ -3,6 +3,7 @@
 /usr/bin/pulseaudio -D &
 /usr/bin/xrdb .xtermrc
 /usr/bin/devmon &
+/usr/bin/stalonetray &
 #/usr/bin/unagi &
 /usr/bin/xmonad
 
