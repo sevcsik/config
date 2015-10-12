@@ -11,8 +11,8 @@ import System.IO
 main = do
     pipe <- spawnPipe "xmobar"
     let config' = defaultConfig { modMask = mod4Mask
-                                , terminal = "gnome-terminal"
-                                , focusedBorderColor="#888888"
+                                , terminal = "lxterminal"
+                                , focusedBorderColor="#55AA55"
                                 , normalBorderColor = "#000000"
                                 , layoutHook = layout'
                                 , workspaces = workspaces'
