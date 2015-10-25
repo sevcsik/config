@@ -45,8 +45,10 @@ handleEvent' = handleEventHook defaultConfig
 
 workspaces' = [ "test" 
               , "dev"
-              , "media"
               , "msg"
               , "msg2"
-              ] ++ map show [5..9]
+              ] ++ map show [5..7] ++
+              [ "media"
+              , "mixer"
+              ]
 
