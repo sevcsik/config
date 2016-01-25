@@ -5,5 +5,6 @@
 /usr/bin/devmon &
 /usr/bin/stalonetray &
 #/usr/bin/unagi &
+/usr/bin/nm-applet &
 /usr/bin/xmonad
 
