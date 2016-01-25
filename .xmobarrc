@@ -1,6 +1,6 @@
 Config 
     { font = "xft:Terminus:size=8"
-	, position = TopW L 95
+	, position = TopW L 93
     , template = " %StdinReader% }{ %whoami%@%hostname% | %uname% | %wlp4s0wi% | %dynnetwork% | %memory% | %cpufreq% | %coretemp% | %date%"
     , commands =
         [ Run StdinReader

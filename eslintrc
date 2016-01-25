@@ -17,4 +17,6 @@ rules:
   no-mixed-spaces-and-tabs: [2, "smart-tabs"]
   no-multi-spaces: 0
   new-cap: 0
+  no-process-exit: 0
+  no-unused-expressions: 0
 
