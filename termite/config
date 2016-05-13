@@ -1,0 +1,5 @@
+[options]
+background = #000000
+foreground = #cccccc
+font = Input Mono 9
+
