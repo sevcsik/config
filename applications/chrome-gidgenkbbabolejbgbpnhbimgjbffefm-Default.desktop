@@ -3,7 +3,7 @@
 Version=1.0
 Terminal=false
 Type=Application
-Name=Vysor (Beta)
+Name=Vysor
 Exec=/usr/bin/chromium --profile-directory=Default --app-id=gidgenkbbabolejbgbpnhbimgjbffefm
 Icon=chrome-gidgenkbbabolejbgbpnhbimgjbffefm-Default
 StartupWMClass=crx_gidgenkbbabolejbgbpnhbimgjbffefm
