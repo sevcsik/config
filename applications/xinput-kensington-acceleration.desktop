@@ -1,0 +1,7 @@
+#!/bin/env xdg-open
+
+[Desktop Entry]
+Name=Xinput - Set up pointer deceleration for Kensington Trackball
+Exec=xinput set-prop "Primax Kensington Eagle Trackball" "Device Accel Constant Deceleration" 1.5
+Type=Application
+X-Desktop-File-Install-Version=0.22
