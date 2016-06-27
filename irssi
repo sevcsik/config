@@ -298,3 +298,7 @@ settings = {
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = { term_charset = "utf-8"; };
 };
+
+ignores = {
+	{ level = "JOINS,PARTS,QUITS,MODES,NICKS" };
+};
