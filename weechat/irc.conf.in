@@ -1,0 +1,260 @@
+#
+# weechat -- irc.conf
+#
+
+[look]
+buffer_open_before_autojoin = on
+buffer_open_before_join = off
+buffer_switch_autojoin = on
+buffer_switch_join = on
+color_nicks_in_names = off
+color_nicks_in_nicklist = off
+color_nicks_in_server_messages = on
+color_pv_nick_like_channel = on
+ctcp_time_format = "%a, %d %b %Y %T %z"
+display_away = local
+display_ctcp_blocked = on
+display_ctcp_reply = on
+display_ctcp_unknown = on
+display_host_join = on
+display_host_join_local = on
+display_host_quit = on
+display_join_message = "329,332,333,366"
+display_old_topic = on
+display_pv_away_once = on
+display_pv_back = on
+highlight_channel = "$nick"
+highlight_pv = "$nick"
+highlight_server = "$nick"
+highlight_tags_restrict = "irc_privmsg,irc_notice"
+item_channel_modes_hide_args = "k"
+item_display_server = buffer_plugin
+item_nick_modes = on
+item_nick_prefix = on
+join_auto_add_chantype = off
+msgbuffer_fallback = current
+new_channel_position = none
+new_pv_position = none
+nick_completion_smart = speakers
+nick_mode = prefix
+nick_mode_empty = off
+nicks_hide_password = "nickserv"
+notice_as_pv = auto
+notice_welcome_redirect = on
+notice_welcome_tags = ""
+notify_tags_ison = "notify_message"
+notify_tags_whois = "notify_message"
+part_closes_buffer = off
+pv_buffer = independent
+pv_tags = "notify_private"
+raw_messages = 256
+server_buffer = merge_with_core
+smart_filter = on
+smart_filter_delay = 5
+smart_filter_join = on
+smart_filter_join_unmask = 30
+smart_filter_mode = "+"
+smart_filter_nick = on
+smart_filter_quit = on
+temporary_servers = off
+topic_strip_colors = off
+
+[color]
+input_nick = lightcyan
+item_channel_modes = default
+item_lag_counting = default
+item_lag_finished = yellow
+item_nick_modes = default
+message_join = green
+message_quit = red
+mirc_remap = "1,-1:darkgray"
+nick_prefixes = "y:lightred;q:lightred;a:lightcyan;o:lightgreen;h:lightmagenta;v:yellow;*:lightblue"
+notice = green
+reason_quit = default
+topic_current = default
+topic_new = white
+topic_old = default
+
+[network]
+autoreconnect_delay_growing = 2
+autoreconnect_delay_max = 600
+ban_mask_default = "*!$ident@$host"
+channel_encode = off
+colors_receive = on
+colors_send = on
+lag_check = 60
+lag_max = 1800
+lag_min_show = 500
+lag_reconnect = 0
+lag_refresh_interval = 1
+notify_check_ison = 1
+notify_check_whois = 5
+sasl_fail_unavailable = on
+send_unknown_commands = off
+whois_double_nick = off
+
+[msgbuffer]
+
+[ctcp]
+
+[ignore]
+
+[server_default]
+addresses = ""
+anti_flood_prio_high = 2
+anti_flood_prio_low = 2
+autoconnect = off
+autojoin = ""
+autoreconnect = on
+autoreconnect_delay = 10
+autorejoin = off
+autorejoin_delay = 30
+away_check = 0
+away_check_max_nicks = 25
+capabilities = ""
+command = ""
+command_delay = 0
+connection_timeout = 60
+default_msg_kick = ""
+default_msg_part = "WeeChat %v"
+default_msg_quit = "WeeChat %v"
+ipv6 = on
+local_hostname = ""
+nicks = "sevcsik,sevcsik1,sevcsik2,sevcsik3,sevcsik4"
+nicks_alternate = on
+notify = ""
+password = ""
+proxy = ""
+realname = ""
+sasl_fail = continue
+sasl_key = ""
+sasl_mechanism = plain
+sasl_password = ""
+sasl_timeout = 15
+sasl_username = ""
+ssl = off
+ssl_cert = ""
+ssl_dhkey_size = 2048
+ssl_fingerprint = ""
+ssl_priorities = "NORMAL:-VERS-SSL3.0"
+ssl_verify = on
+username = "sevcsik"
+
+[server]
+freenode-znc.addresses = "sevdev.hu/6697"
+freenode-znc.proxy
+freenode-znc.ipv6
+freenode-znc.ssl = on
+freenode-znc.ssl_cert
+freenode-znc.ssl_priorities
+freenode-znc.ssl_dhkey_size
+freenode-znc.ssl_fingerprint
+freenode-znc.ssl_verify
+freenode-znc.password = "IRC_PASSWORD"
+freenode-znc.capabilities
+freenode-znc.sasl_mechanism
+freenode-znc.sasl_username
+freenode-znc.sasl_password
+freenode-znc.sasl_key
+freenode-znc.sasl_timeout
+freenode-znc.sasl_fail
+freenode-znc.autoconnect = on
+freenode-znc.autoreconnect
+freenode-znc.autoreconnect_delay
+freenode-znc.nicks
+freenode-znc.nicks_alternate
+freenode-znc.username = "sevcsik@HOST/freenode"
+freenode-znc.realname
+freenode-znc.local_hostname
+freenode-znc.command
+freenode-znc.command_delay
+freenode-znc.autojoin
+freenode-znc.autorejoin
+freenode-znc.autorejoin_delay
+freenode-znc.connection_timeout
+freenode-znc.anti_flood_prio_high
+freenode-znc.anti_flood_prio_low
+freenode-znc.away_check
+freenode-znc.away_check_max_nicks
+freenode-znc.default_msg_kick
+freenode-znc.default_msg_part
+freenode-znc.default_msg_quit
+freenode-znc.notify
+gitter-znc.addresses = "sevdev.hu/6697"
+gitter-znc.proxy
+gitter-znc.ipv6
+gitter-znc.ssl = on
+gitter-znc.ssl_cert
+gitter-znc.ssl_priorities
+gitter-znc.ssl_dhkey_size
+gitter-znc.ssl_fingerprint
+gitter-znc.ssl_verify
+gitter-znc.password = "IRC_PASSWORD"
+gitter-znc.capabilities
+gitter-znc.sasl_mechanism
+gitter-znc.sasl_username
+gitter-znc.sasl_password
+gitter-znc.sasl_key
+gitter-znc.sasl_timeout
+gitter-znc.sasl_fail
+gitter-znc.autoconnect = on
+gitter-znc.autoreconnect
+gitter-znc.autoreconnect_delay
+gitter-znc.nicks
+gitter-znc.nicks_alternate
+gitter-znc.username = "sevcsik@HOST/gitter"
+gitter-znc.realname
+gitter-znc.local_hostname
+gitter-znc.command
+gitter-znc.command_delay
+gitter-znc.autojoin
+gitter-znc.autorejoin
+gitter-znc.autorejoin_delay
+gitter-znc.connection_timeout
+gitter-znc.anti_flood_prio_high
+gitter-znc.anti_flood_prio_low
+gitter-znc.away_check
+gitter-znc.away_check_max_nicks
+gitter-znc.default_msg_kick
+gitter-znc.default_msg_part
+gitter-znc.default_msg_quit
+gitter-znc.notify
+ircnet-znc.addresses = "sevdev.hu/6697"
+ircnet-znc.proxy
+ircnet-znc.ipv6
+ircnet-znc.ssl = on
+ircnet-znc.ssl_cert
+ircnet-znc.ssl_priorities
+ircnet-znc.ssl_dhkey_size
+ircnet-znc.ssl_fingerprint
+ircnet-znc.ssl_verify
+ircnet-znc.password = "IRC_PASSWORD"
+ircnet-znc.capabilities
+ircnet-znc.sasl_mechanism
+ircnet-znc.sasl_username
+ircnet-znc.sasl_password
+ircnet-znc.sasl_key
+ircnet-znc.sasl_timeout
+ircnet-znc.sasl_fail
+ircnet-znc.autoconnect = on
+ircnet-znc.autoreconnect
+ircnet-znc.autoreconnect_delay
+ircnet-znc.nicks
+ircnet-znc.nicks_alternate
+ircnet-znc.username = "sevcsik@HOST/ircnet"
+ircnet-znc.realname
+ircnet-znc.local_hostname
+ircnet-znc.command
+ircnet-znc.command_delay
+ircnet-znc.autojoin
+ircnet-znc.autorejoin
+ircnet-znc.autorejoin_delay
+ircnet-znc.connection_timeout
+ircnet-znc.anti_flood_prio_high
+ircnet-znc.anti_flood_prio_low
+ircnet-znc.away_check
+ircnet-znc.away_check_max_nicks
+ircnet-znc.default_msg_kick
+ircnet-znc.default_msg_part
+ircnet-znc.default_msg_quit
+ircnet-znc.notify

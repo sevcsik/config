@@ -12,7 +12,7 @@ servers = (
     use_ssl = "yes";
     chatnet = "ircnet-znc";
     autoconnect = "true";
-	password = "sevcsik@HOSTNAME/ircnet:PASSWORD";
+	password = "sevcsik@HOST/ircnet:IRC_PASSWORD";
   },
   {
     address = "sevdev.hu";
@@ -20,7 +20,7 @@ servers = (
     use_ssl = "yes";
     chatnet = "freenode-znc";
     autoconnect = "true";
-	password = "sevcsik@HOSTNAME/freenode:PASSWORD";
+	password = "sevcsik@HOST/freenode:IRC_PASSWORD";
   }
   {
     address = "sevdev.hu";
@@ -28,7 +28,7 @@ servers = (
     use_ssl = "yes";
     chatnet = "gitter-znc";
     autoconnect = "true";
-	password = "sevcsik@HOSTNAME/gitter:PASSWORD";
+	password = "sevcsik@HOST/gitter:IRC_PASSWORD";
   }
 );
 
@@ -299,6 +299,6 @@ settings = {
   "fe-common/core" = { term_charset = "utf-8"; };
 };
 
-ignores = {
+ignores = (
 	{ level = "JOINS,PARTS,QUITS,MODES,NICKS" };
-};
+);
