@@ -148,7 +148,7 @@ freenode-znc.ssl = on
 freenode-znc.ssl_cert
 freenode-znc.ssl_priorities
 freenode-znc.ssl_dhkey_size
-freenode-znc.ssl_fingerprint
+freenode-znc.ssl_fingerprint = "1a36d1bbefd9e21f14b58ce3c4870963d5516e88"
 freenode-znc.ssl_verify
 freenode-znc.password = "IRC_PASSWORD"
 freenode-znc.capabilities
@@ -187,7 +187,7 @@ gitter-znc.ssl = on
 gitter-znc.ssl_cert
 gitter-znc.ssl_priorities
 gitter-znc.ssl_dhkey_size
-gitter-znc.ssl_fingerprint
+gitter-znc.ssl_fingerprint = "1a36d1bbefd9e21f14b58ce3c4870963d5516e88"
 gitter-znc.ssl_verify
 gitter-znc.password = "IRC_PASSWORD"
 gitter-znc.capabilities
@@ -226,7 +226,7 @@ ircnet-znc.ssl = on
 ircnet-znc.ssl_cert
 ircnet-znc.ssl_priorities
 ircnet-znc.ssl_dhkey_size
-ircnet-znc.ssl_fingerprint
+ircnet-znc.ssl_fingerprint = "1a36d1bbefd9e21f14b58ce3c4870963d5516e88"
 ircnet-znc.ssl_verify
 ircnet-znc.password = "IRC_PASSWORD"
 ircnet-znc.capabilities
