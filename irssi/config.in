@@ -36,6 +36,10 @@ servers = (
 #  { name = "#lobby"; chatnet = "EsperNet"; autojoin = "No"; },
 #);
 
+ignores = (
+  { level = "JOINS PARTS QUITS" }
+);
+
 aliases = {
   ATAG = "WINDOW SERVER";
   ADDALLCHANS = "SCRIPT EXEC foreach my \\$channel (Irssi::channels()) { Irssi::command(\"CHANNEL ADD -auto \\$channel->{name} \\$channel->{server}->{tag} \\$channel->{key}\")\\;}";
