@@ -1,3 +1,4 @@
 weechat/irc.conf
 irssi/config
+systemd/default.target.wants
 
