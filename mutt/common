@@ -5,4 +5,5 @@ alternative_order text/plain text/html
 set sort="threads"
 set strict_threads="yes"
 set beep_new
+set sidebar_visible="yes"
 source "~/.mutt/neonwolf"
