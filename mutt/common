@@ -5,5 +5,6 @@ alternative_order text/plain text/html
 set sort="threads"
 set strict_threads="yes"
 set beep_new
-set sidebar_visible="yes"
+set reflow_text
+set reflow_wrap="80"
 source "~/.mutt/neonwolf"
