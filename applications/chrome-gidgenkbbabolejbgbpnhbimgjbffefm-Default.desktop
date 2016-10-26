@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Vysor
-Exec=/usr/bin/chromium --profile-directory=Default --app-id=gidgenkbbabolejbgbpnhbimgjbffefm
+Exec=/usr/lib64/chromium-browser/chromium-launcher.sh --profile-directory=Default --app-id=gidgenkbbabolejbgbpnhbimgjbffefm
 Icon=chrome-gidgenkbbabolejbgbpnhbimgjbffefm-Default
 StartupWMClass=crx_gidgenkbbabolejbgbpnhbimgjbffefm
