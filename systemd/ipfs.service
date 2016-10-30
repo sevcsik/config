@@ -3,6 +3,6 @@ Description=IPFS daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/local/bin/ipfs daemon
+ExecStart=/usr/bin/env ipfs daemon
 Restart=on-abort
 

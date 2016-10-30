@@ -1,0 +1,8 @@
+[Unit]
+Description=Storj Share
+After=network.target
+
+[Service]
+Environment="STORJSHARE_PASSPHRASE=PASSPHRASE_PLACEHOLDER"
+ExecStart=/usr/bin/storjshare start --datadir /home/sevcsik/.storjshare
+Restart=on-abort
