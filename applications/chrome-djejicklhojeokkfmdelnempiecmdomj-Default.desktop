@@ -4,7 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Lucidchart Diagrams - Desktop
-Exec=/usr/bin/chromium --profile-directory=Default --app-id=djejicklhojeokkfmdelnempiecmdomj
+Exec=/usr/lib64/chromium-browser/chromium-launcher.sh --profile-directory=Default --app-id=djejicklhojeokkfmdelnempiecmdomj
 Icon=chrome-djejicklhojeokkfmdelnempiecmdomj-Default
-NoDisplay=true
 StartupWMClass=crx_djejicklhojeokkfmdelnempiecmdomj

@@ -7,4 +7,8 @@ set strict_threads="yes"
 set beep_new
 set reflow_text
 set reflow_wrap="80"
+set ts_enabled
 source "~/.mutt/neonwolf"
+
+ignore *
+unignore from date subject to cc x-mailer

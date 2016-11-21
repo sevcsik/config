@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Postman
-Exec=/usr/bin/chromium --profile-directory=Default --app-id=fhbjgbiflinjbdggehcddcbncdddomop
+Exec=/usr/lib64/chromium-browser/chromium-launcher.sh --profile-directory=Default --app-id=fhbjgbiflinjbdggehcddcbncdddomop
 Icon=chrome-fhbjgbiflinjbdggehcddcbncdddomop-Default
 StartupWMClass=crx_fhbjgbiflinjbdggehcddcbncdddomop

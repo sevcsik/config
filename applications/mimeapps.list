@@ -1,4 +1,4 @@
 [Default Applications]
-text/html=vivaldi-stable.desktop
-x-scheme-handler/http=vivaldi-stable.desktop
-x-scheme-handler/https=vivaldi-stable.desktop
+text/html=chromium-browser-chromium.desktop
+x-scheme-handler/http=chromium-browser-chromium.desktop
+x-scheme-handler/https=chromium-browser-chromium.desktop
