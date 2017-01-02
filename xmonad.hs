@@ -10,17 +10,15 @@ import XMonad.Util.Run
 import System.IO
 
 main = do
-    pipe <- spawnPipe "xmobar"
     let config' = kde4Config { modMask = mod4Mask
-                                , terminal = "termite"
-                                , focusedBorderColor="#87D7FF"
-                                , normalBorderColor = "#000000"
-                                , layoutHook = layout'
-                                , workspaces = workspaces'
-                                , logHook = log' pipe
-                                , manageHook = manage'
-                                , handleEventHook = handleEvent'
-                                }
+                             , terminal = "konsole"
+                             , focusedBorderColor="#87D7FF"
+                             , normalBorderColor = "#000000"
+                             , layoutHook = layout'
+                             , workspaces = workspaces'
+                             , manageHook = manage'
+                             , handleEventHook = handleEvent'
+                             }
 
     xmonad $ ewmh 
            $ (withUrgencyHook NoUrgencyHook) 
