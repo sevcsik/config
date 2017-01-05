@@ -9,6 +9,8 @@ import XMonad.Hooks.ManageHelpers ( doFullFloat, isFullscreen )
 import XMonad.Util.Run
 import System.IO
 
+customRules = composeAll [ className =? "plasmashell" --> doIgnore ]
+
 main = do
     let config' = kde4Config { modMask = mod4Mask
                              , terminal = "konsole"
@@ -24,18 +26,13 @@ main = do
            $ (withUrgencyHook NoUrgencyHook) 
            $ config'
 
-log' pipe = dynamicLogWithPP xmobarPP
-    { ppCurrent = xmobarColor "yellow" ""
-    , ppUrgent = xmobarColor "red" ""
-    , ppOutput = hPutStrLn pipe
-    }
-
 layout' = ( avoidStruts
           . smartBorders
           ) (layoutHook defaultConfig)
 
 manage' = ( isFullscreen --> doFullFloat)
       <+> manageHook defaultConfig
+      <+> customRules
       <+> manageDocks 
 
 handleEvent' = handleEventHook defaultConfig
