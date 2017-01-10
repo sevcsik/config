@@ -11,4 +11,4 @@ set ts_enabled
 source "~/.mutt/neonwolf"
 
 ignore *
-unignore from date subject to cc x-mailer
+unignore from date subject to cc x-mailer importance
