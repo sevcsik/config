@@ -1,4 +1,4 @@
 [Default Applications]
-text/html=userapp-Firefox-YRD7QY.desktop
-x-scheme-handler/http=chromium-browser-chromium.desktop
-x-scheme-handler/https=chromium-browser-chromium.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
