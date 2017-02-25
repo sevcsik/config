@@ -1,0 +1,6 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=ÁNYK (abevjava)
+Exec=/home/sevcsik/.local/lib/abevjava/abevjava_start
+Type=Application
+Path=/home/sevcsik/.local/lib/abevjava
