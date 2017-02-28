@@ -1,3 +1,8 @@
+xrandr-single
+
+# One of these should work...
 xrandr --output eDP1 --pos 0x0 \
        --output HDMI1 --mode 1360x768 --pos 0x0
+xrandr --output eDP1 --pos 0x0 \
+       --output HDMI1 --mode 1366x768 --pos 0x0
 
