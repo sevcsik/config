@@ -36,10 +36,12 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec termite
-bindsym Pause exec i3lock
+bindsym Pause exec xscreensaver-command -lock
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+bindsym $mod+d exec synapse
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -164,3 +166,4 @@ exec compton
 exec setxkbmap gb,hu -option grp:caps_toggle
 exec davmail
 exec synapse
+exec xscreensaver
