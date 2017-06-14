@@ -1,5 +1,5 @@
 [options]
-background = #000000
-foreground = #cccccc
-font = Terminus 9
+font = Source Code Pro Regular 9
 
+[colors]
+background = rgba(0, 0, 0, 0.9)
