@@ -164,7 +164,5 @@ bar {
 
 exec nm-applet
 exec compton
-exec setxkbmap gb,hu -option grp:caps_toggle
-exec davmail
 exec synapse
 exec xscreensaver
