@@ -1,4 +1,4 @@
-xrandr-single
+~/.local/bin/xrandr-single
 
 # One of these should work...
 xrandr --output eDP1 --pos 0x0 \

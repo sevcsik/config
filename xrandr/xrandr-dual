@@ -1,3 +1,4 @@
-xrandr-single
-xrandr --output eDP1 --mode 1366x768 --pos 0x0 \
-       --output DP1 --mode 1920x1080 --pos 1366x-312
+~/.local/bin/xrandr-single
+xrandr --output eDP1 --mode 1366x768 --pos 3840x312 \
+       --output DP1 --mode 1920x1080 --pos 1920x0 \
+       --output DP2 --mode 1920x1080 --pos 0x0
