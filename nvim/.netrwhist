@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/sevcsik/dc/module-limit-client-admin-ng/src'
+let g:netrw_dirhist_2='/home/sevcsik/dc/module-limit-client-admin-ng/src/main'
+let g:netrw_dirhist_3='/home/sevcsik/dc/module-limit-client-admin-ng/src/main/resources'
+let g:netrw_dirhist_4='/home/sevcsik/dc/module-limit-client-admin-ng/src/main/resources/js'
+let g:netrw_dirhist_5='/home/sevcsik/dc/module-limit-client-admin-ng/src/main/resources/js/pegasus'
+let g:netrw_dirhist_6='/home/sevcsik/dc/module-limit-client-admin-ng/src/main/resources/js/pegasus/module'
+let g:netrw_dirhist_7='/home/sevcsik/dc/module-limit-client-admin-ng/src/main/resources/js/pegasus/module/limit'
+let g:netrw_dirhist_8='/home/sevcsik/dc/module-limit-client-admin-ng/src/main/resources/js/pegasus/module/limit/banklimit'
+let g:netrw_dirhist_9='/home/sevcsik/dc/module-limit-client-admin-ng/src/main/resources/js/pegasus/module/limit'
