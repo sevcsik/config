@@ -169,5 +169,7 @@ exec nm-applet
 exec compton
 exec synapse
 exec xscreensaver -no-splash
+exec shutter --min_at_startup
+exec pnmixer
 
 client.focused #ff49ec #184963 #00bdff #ffffff #cc39bd
