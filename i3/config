@@ -52,6 +52,9 @@ bindsym $mod+d exec synapse
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# sticky
+bindsym $mod+Shift+s sticky toggle
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
