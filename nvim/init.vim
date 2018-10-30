@@ -36,6 +36,7 @@ if dein#load_state("~/.cache/dein")
 	call dein#add("rafaqz/ranger.vim")
 	call dein#add("JalaiAmitahl/maven-compiler.vim")
 	call dein#add("mfukar/robotframework-vim")
+	call dein#add("dpelle/vim-LanguageTool")
 	call dein#end()
 	call dein#save_state()
 endif
@@ -55,6 +56,8 @@ let g:syntastic_typescript_tsc_fname = ''
 let g:syntastic_java_checkers=[]
 let g:syntastic_java_javac_config_file_enabled = 1
 
+"LangugeTool
+let g:languagetool_jar = '/nix/store/a69hgadgx1l4z2aga6nkk43pqf6y5hjm-LanguageTool-4.2/share/languagetool-commandline.jar'
 
 "Code style
 set shiftwidth=4
