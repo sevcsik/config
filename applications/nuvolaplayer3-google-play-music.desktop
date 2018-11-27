@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Google Play Music
-Exec=nuvolaplayer3 -a google_play_music
-Type=Application
-Categories=AudioVideo;Audio;
-Icon=nuvolaplayer3_google_play_music
-StartupWMClass=nuvolaplayer3-google-play-music
-StartupNotify=true
-Terminal=false

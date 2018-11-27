@@ -1,9 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Version=1.0
-Terminal=false
-Type=Application
-Name=OneNote Online
-Exec=/usr/bin/chromium --profile-directory=Default --app-id=ciniambnphakdoflgeamacamhfllbkmo
-Icon=chrome-ciniambnphakdoflgeamacamhfllbkmo-Default
-StartupWMClass=crx_ciniambnphakdoflgeamacamhfllbkmo

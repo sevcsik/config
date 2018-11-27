@@ -19,7 +19,6 @@ if dein#load_state("~/.cache/dein")
 	call dein#add("idanarye/vim-vebugger")
 	call dein#add("artur-shaik/vim-javacomplete2")
 	call dein#add("TroyFletcher/vim-colors-synthwave")
-	call dein#add("mhinz/vim-startify")
 	call dein#add("airblade/vim-gitgutter")
 	call dein#add("tpope/vim-abolish")
 	call dein#add("wincent/terminus")
@@ -33,10 +32,11 @@ if dein#load_state("~/.cache/dein")
 	call dein#add("Shougo/vimproc.vim", { 'build': 'make' })
 	call dein#add("Shougo/deoplete.nvim")
 	call dein#add("rudism/deoplete-tsuquyomi")
-	call dein#add("rafaqz/ranger.vim")
 	call dein#add("JalaiAmitahl/maven-compiler.vim")
 	call dein#add("mfukar/robotframework-vim")
 	call dein#add("dpelle/vim-LanguageTool")
+	call dein#add("rbgrouleff/bclose.vim")
+	call dein#add("francoiscabrol/ranger.vim")
 	call dein#end()
 	call dein#save_state()
 endif
@@ -91,7 +91,6 @@ set listchars=tab:»\ ,trail:.
 set background=dark
 colorscheme synthwave
 hi! Normal ctermfg=223 ctermbg=none guifg=#ebdbb2 guibg=none
-let g:airline_theme="gruvbox"
 let &t_Co=256
 set t_ut=
 set hlsearch

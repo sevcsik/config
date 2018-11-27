@@ -1,7 +1,0 @@
-#!/bin/env xdg-open
-
-[Desktop Entry]
-Name=Xinput - Enable middle button emulation for Kensington Trackball
-Exec=xinput set-prop "Primax Kensington Eagle Trackball" "Evdev Middle Button Emulation" 1
-Type=Application
-X-Desktop-File-Install-Version=0.22

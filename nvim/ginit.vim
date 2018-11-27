@@ -1,1 +1,2 @@
-Guifont Fixedsys:9
+Guifont Fira Code:h10
+hi Normal guibg=black
