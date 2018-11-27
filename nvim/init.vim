@@ -1,5 +1,3 @@
-let $PYTHONPATH='/usr/lib/python3.5/site-packages/'
-
 if &compatible
 	set nocompatible
 endif
@@ -7,36 +5,63 @@ set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
 if dein#load_state("~/.cache/dein")
 	call dein#begin("~/.cache/dein")
-	call dein#add("tpope/vim-fugitive")
-	call dein#add("flazz/vim-colorschemes")
-	call dein#add("scrooloose/syntastic")
-	call dein#add("wakatime/vim-wakatime")
-	call dein#add("editorconfig/editorconfig-vim")
-	call dein#add("vim-airline/vim-airline")
-	call dein#add("vim-scripts/DrawIt")
-	call dein#add("mattn/emmet-vim")
-	call dein#add("hsanson/vim-android")
-	call dein#add("idanarye/vim-vebugger")
-	call dein#add("artur-shaik/vim-javacomplete2")
-	call dein#add("TroyFletcher/vim-colors-synthwave")
+
+	"Git
 	call dein#add("airblade/vim-gitgutter")
-	call dein#add("tpope/vim-abolish")
-	call dein#add("wincent/terminus")
-	call dein#add("groenewege/vim-less")
-	call dein#add("hail2u/vim-css3-syntax")
-	call dein#add("pangloss/vim-javascript")
-	call dein#add("Quramy/tsuquyomi")
-	call dein#add("leafgarland/typescript-vim")
-	call dein#add("davidhalter/jedi-vim")
-	call dein#add("zchee/deoplete-jedi")
-	call dein#add("Shougo/vimproc.vim", { 'build': 'make' })
+	call dein#add("tpope/vim-fugitive")
+
+	"Scala
+"	call dein#add("ensime/ensime-vim")
+	call dein#add("derekwyatt/vim-scala")
+
+	"Typescript
 	call dein#add("Shougo/deoplete.nvim")
+	let g:deoplete#enable_at_startup = 1
+
+	call dein#add("Quramy/tsuquyomi")
 	call dein#add("rudism/deoplete-tsuquyomi")
+	let g:tsuquyomi_completion_detail = 1
+
+	call dein#add("leafgarland/typescript-vim")
+
+	"Javascript
+	call dein#add("pangloss/vim-javascript")
+
+	"Java
 	call dein#add("JalaiAmitahl/maven-compiler.vim")
+	call dein#add("artur-shaik/vim-javacomplete2")
+
+	"Robot Framework
 	call dein#add("mfukar/robotframework-vim")
+
+	"Misc
+	call dein#add("tpope/vim-abolish")
+
 	call dein#add("dpelle/vim-LanguageTool")
+	let g:languagetool_jar = '/nix/store/a69hgadgx1l4z2aga6nkk43pqf6y5hjm-LanguageTool-4.2/share/languagetool-commandline.jar'
+
+	call dein#add("editorconfig/editorconfig-vim")
+
+	call dein#add("scrooloose/syntastic")
+	let g:syntastic_javascript_checkers = ['eslint']
+	let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
+	let g:syntastic_solidity_checkers = ['solium']
+	let g:syntastic_typescript_tsc_fname = ''
+	let g:syntastic_java_checkers=[]
+	let g:syntastic_java_javac_config_file_enabled = 1
+
+	call dein#add("Shougo/vimproc.vim", { 'build': 'make' })
+
+
+	call dein#add("wincent/terminus")
+	call dein#add("TroyFletcher/vim-colors-synthwave")
+
+	call dein#add("vim-airline/vim-airline")
+	let g:airline_powerline_fonts = 1
+
 	call dein#add("rbgrouleff/bclose.vim")
 	call dein#add("francoiscabrol/ranger.vim")
+
 	call dein#end()
 	call dein#save_state()
 endif
@@ -44,20 +69,6 @@ endif
 if dein#check_install()
 	call dein#install()
 endif
-
-let g:airline_powerline_fonts = 1
-let g:deoplete#enable_at_startup = 1
-
-"Syntastic config
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
-let g:syntastic_solidity_checkers = ['solium']
-let g:syntastic_typescript_tsc_fname = ''
-let g:syntastic_java_checkers=[]
-let g:syntastic_java_javac_config_file_enabled = 1
-
-"LangugeTool
-let g:languagetool_jar = '/nix/store/a69hgadgx1l4z2aga6nkk43pqf6y5hjm-LanguageTool-4.2/share/languagetool-commandline.jar'
 
 "Code style
 set shiftwidth=4
@@ -110,5 +121,5 @@ silent! so ../.vimrc
 
 function Presentation()
 	set background=light
-	hi! Normal ctermbg=none guibg=none
+	hi! Normal ctermbg=white guibg=white
 endfunction

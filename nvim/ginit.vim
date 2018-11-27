@@ -1,2 +1,2 @@
-Guifont Fira Code:h10
+Guifont Fira Code:h9
 hi Normal guibg=black
