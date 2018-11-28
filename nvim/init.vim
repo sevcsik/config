@@ -18,11 +18,8 @@ if dein#load_state("~/.cache/dein")
 	call dein#add("Shougo/deoplete.nvim")
 	let g:deoplete#enable_at_startup = 1
 
-	call dein#add("Quramy/tsuquyomi")
-	call dein#add("rudism/deoplete-tsuquyomi")
-	let g:tsuquyomi_completion_detail = 1
-
-	call dein#add("leafgarland/typescript-vim")
+	call dein#add('HerringtonDarkholme/yats.vim')
+	call dein#add('mhartington/nvim-typescript', {'build': './install.sh'})
 
 	"Javascript
 	call dein#add("pangloss/vim-javascript")
