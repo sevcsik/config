@@ -10,14 +10,16 @@ if dein#load_state("~/.cache/dein")
 	call dein#add("airblade/vim-gitgutter")
 	call dein#add("tpope/vim-fugitive")
 
+	"Haskell
+	call dein#add("neovimhaskell/haskell-vim")
+	call dein#add("parsonsmatt/intero-neovim")
+
 	"Scala
 "	call dein#add("ensime/ensime-vim")
 	call dein#add("derekwyatt/vim-scala")
 
 	"Typescript
 	call dein#add("Shougo/deoplete.nvim")
-	let g:deoplete#enable_at_startup = 1
-
 	call dein#add('HerringtonDarkholme/yats.vim')
 	call dein#add('mhartington/nvim-typescript', {'build': './install.sh'})
 
@@ -41,9 +43,8 @@ if dein#load_state("~/.cache/dein")
 
 	call dein#add("scrooloose/syntastic")
 	let g:syntastic_javascript_checkers = ['eslint']
-	let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
+	let g:syntastic_typescript_checkers = ['tslint']
 	let g:syntastic_solidity_checkers = ['solium']
-	let g:syntastic_typescript_tsc_fname = ''
 	let g:syntastic_java_checkers=[]
 	let g:syntastic_java_javac_config_file_enabled = 1
 
@@ -58,6 +59,8 @@ if dein#load_state("~/.cache/dein")
 
 	call dein#add("rbgrouleff/bclose.vim")
 	call dein#add("francoiscabrol/ranger.vim")
+	call dein#add("ctrlpvim/ctrlp.vim")
+	call dein#add("mhinz/vim-grepper")
 
 	call dein#end()
 	call dein#save_state()
@@ -79,17 +82,6 @@ command Todo grep TODO -A1 -r .
 
 "Keyboard shortcuts
 tnoremap <Esc> <C-\><C-n>
-map <leader>rr :RangerEdit<cr>
-map <leader>rv :RangerVSplit<cr>
-map <leader>rs :RangerSplit<cr>
-map <leader>rt :RangerTab<cr>
-map <leader>ri :RangerInsert<cr>
-map <leader>ra :RangerAppend<cr>
-map <leader>rc :set operatorfunc=RangerChangeOperator<cr>g@
-map <leader>rR :set operatorfunc=RangerBrowseEdit<cr>g@
-map <leader>rT :set operatorfunc=RangerBrowseTab<cr>g@
-map <leader>rS :set operatorfunc=RangerBrowseSplit<cr>g@
-map <leader>rV :set operatorfunc=RangerBrowseVSplit<cr>g@
 
 "Look'n'feel
 filetype plugin indent on
@@ -110,13 +102,7 @@ set number
 set guioptions-=T
 set guioptions-=m
 
-"Load local config files
-silent! so .vimrc
-silent! so ../.vimrc
+set exrc
 
-"Switch to presentation mode
+let g:deoplete#enable_at_startup = 1
 
-function Presentation()
-	set background=light
-	hi! Normal ctermbg=white guibg=white
-endfunction
