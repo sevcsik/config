@@ -39,7 +39,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec konsole
-bindsym Pause exec xscreensaver-command -lock
+bindsym Pause exec swaylock
 bindsym Print exec gnome-screenshot --interactive
 
 # kill focused window
