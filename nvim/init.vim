@@ -18,6 +18,7 @@ if dein#load_state("~/.cache/dein")
   call dein#add("Shougo/vimproc.vim", { "build": "make" })
   call dein#add("wincent/terminus")
   call dein#add("TroyFletcher/vim-colors-synthwave")
+  call dein#add("tpope/vim-vividchalk")
   call dein#add("vim-airline/vim-airline")
   let g:airline_powerline_fonts = 1
   call dein#add("rbgrouleff/bclose.vim")
@@ -95,11 +96,7 @@ syntax enable
 set list
 set listchars=tab:»\ ,trail:.
 set background=dark
-colorscheme synthwave
-hi! Normal ctermfg=223 ctermbg=none guifg=#ebdbb2 guibg=none
-let &t_Co=256
-set t_ut=
-set hlsearch
+colorscheme vividchalk
 set colorcolumn=120
 set mouse=a
 set backspace=indent,eol,start
