@@ -1,4 +1,7 @@
 weechat/irc.conf
 irssi/config
 systemd/default.target.wants
-
+xmonad/xmonad-x86_64-linux
+xmonad/xmonad.errors
+xmonad/xmonad.hi
+xmonad/xmonad.o
