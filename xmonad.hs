@@ -7,19 +7,21 @@ import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.EwmhDesktops
 import XMonad.Hooks.ManageHelpers ( doFullFloat, isFullscreen )
 import XMonad.Util.Run
+import XMonad.Util.SpawnOnce
 import System.IO
 
 customRules = composeAll [ className =? "plasmashell" --> doIgnore ]
 
 main = do
     let config' = kde4Config { modMask = mod4Mask
-                             , terminal = "konsole"
-                             , focusedBorderColor="#87D7FF"
-                             , normalBorderColor = "#000000"
-                             , layoutHook = layout'
-                             , workspaces = workspaces'
-                             , manageHook = manage'
+                             , focusedBorderColor="#ff00ff"
                              , handleEventHook = handleEvent'
+                             , layoutHook = layout'
+                             , manageHook = manage'
+                             , normalBorderColor = "#000000"
+                             , startupHook = spawnOnce "./.xmonad/startup.sh"
+                             , terminal = "konsole"
+                             , workspaces = workspaces'
                              }
 
     xmonad $ ewmh 
