@@ -14,6 +14,17 @@ import XMonad.Util.SpawnOnce
 
 customRules = composeAll [ className =? "plasmashell" --> doIgnore ]
 
+rotateLeft = spawn
+    (  "xrandr --output eDP-1 --rotate left && "
+    ++ "xinput set-prop \"ELAN2097:00 04F3:2687\" --type=float \"Coordinate Transformation Matrix\" 0 -1 1 1 0 0 0 0 1"
+    )
+
+rotateNormal = spawn
+    (  "xrandr --output eDP-1 --rotate normal && "
+    ++ "xinput set-prop \"ELAN2097:00 04F3:2687\" --type=float \"Coordinate Transformation Matrix\" 0 0 0 0 0 0 0 0 0"
+    )
+
+
 main = do
     let config' = kde4Config { modMask = mod4Mask
                              , focusedBorderColor="#ff00ff"
@@ -24,12 +35,8 @@ main = do
                              , startupHook = spawnOnce "./.xmonad/startup.sh"
                              , terminal = "konsole"
                              , workspaces = workspaces'
-                             } `additionalKeys` [ (( mod4Mask, xK_r)
-                                                  , spawn "xrandr --output eDP-1 --rotate left"
-                                                  )
-                                                , (( mod4Mask .|. shiftMask, xK_r)
-                                                  , spawn "xrandr --output eDP-1 --rotate normal"
-                                                  )
+                             } `additionalKeys` [ (( mod4Mask, xK_r), rotateLeft)
+                                                , (( mod4Mask .|. shiftMask, xK_r), rotateNormal)
                                                 ]
 
     xmonad $ ewmh 
