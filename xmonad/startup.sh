@@ -5,5 +5,4 @@ trayer --edge top --align right --expand true --widthtype request --transparent 
 nm-applet &
 cbatticon &
 pnmixer &
-xwinwrap -fs -b -ov -- mpv ~/Pictures/background.mp4 --wid WID --loop --no-osc --no-osd-bar &
-xscreensaver --no-splash &
+xscreensaver -no-splash &
