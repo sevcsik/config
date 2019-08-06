@@ -41,7 +41,7 @@ if dein#load_state("~/.cache/dein")
 
   "Typescript
   call dein#add("Shougo/deoplete.nvim")
-//   call dein#add("leafgarland/typescript-vim")
+  call dein#add('HerringtonDarkholme/yats.vim')
 
   if has("win32")
     call dein#add("mhartington/nvim-typescript", { "build": "./install.bat" })
