@@ -45,6 +45,10 @@ if dein#load_state("~/.cache/dein")
   call dein#add('Quramy/tsuquyomi')
   call dein#add('rudism/deoplete-tsuquyomi')
 
+  "Nix
+  call dein#add("LnL7/vim-nix")
+
+
   " if has("win32")
   "   call dein#add("mhartington/nvim-typescript", { "rev": "e5839a5bb6a87820f750b5243b309d0688032e09", "build": "./install.bat" })
   " elseif has("unix")
