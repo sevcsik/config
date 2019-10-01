@@ -1,8 +1,0 @@
-[Unit]
-Description=Ethereum go client
-After=network.target
-
-[Service]
-ExecStart=/usr/bin/geth --rpc --rpcaddr 127.0.0.1
-Restart=on-abort
-

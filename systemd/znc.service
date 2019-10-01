@@ -1,8 +1,0 @@
-[Unit]
-Description=ZNC IRC bouncer
-After=network.target
-
-[Service]
-ExecStart=/usr/bin/znc -f
-Restart=on-abort
-
