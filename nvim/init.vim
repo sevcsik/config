@@ -35,6 +35,9 @@ if dein#load_state("~/.cache/dein")
   call dein#add("neovimhaskell/haskell-vim")
   call dein#add("parsonsmatt/intero-neovim")
 
+  "PureScript
+  call dein#add("purescript-contrib/purescript-vim")
+
   "Scala
 "  call dein#add("ensime/ensime-vim")
   call dein#add("derekwyatt/vim-scala")
@@ -48,12 +51,8 @@ if dein#load_state("~/.cache/dein")
   "Nix
   call dein#add("LnL7/vim-nix")
 
-
-  " if has("win32")
-  "   call dein#add("mhartington/nvim-typescript", { "rev": "e5839a5bb6a87820f750b5243b309d0688032e09", "build": "./install.bat" })
-  " elseif has("unix")
-  "   call dein#add("mhartington/nvim-typescript", { "rev": "e5839a5bb6a87820f750b5243b309d0688032e09", "build": "./install.sh" })
-  " endif
+  "PowerShell"
+  call dein#add("PProvost/vim-ps1")
 
   "Javascript
   call dein#add("pangloss/vim-javascript")

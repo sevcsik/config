@@ -7,3 +7,4 @@ nm-applet &
 cbatticon &
 pnmixer &
 xscreensaver -no-splash &
+protonmail-bridge --no-window &
