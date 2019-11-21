@@ -6,7 +6,7 @@ abbr gbsig --<CR>Sevcsik-Zajácz András<CR>
 \GB Solutions Zrt<CR>
 \1095 Budapest, Lechner Ödön fasor 8.<CR>
 \m: +36 70 291 5159<CR>
-\e: sevcsik-zajacz.andras@gbsolutions.io
+\e: sevcsik-zajacz.andras@gbsolutions.io<CR>
 \PGP: https://keybase.io/sevcsik
 abbr sdsig --<CR>Andras Sevcsik e.v.<CR>Developer<CR>+36702915159
 abbr sig --<CR>Minden jót,<CR>Sevcsik-Zajácz
