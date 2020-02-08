@@ -53,6 +53,8 @@ if dein#load_state("~/.cache/dein")
 
   "PowerShell"
   call dein#add("PProvost/vim-ps1")
+  call dein#add("autozimu/LanguageClient-neovim", { "build": "bash ./install.sh" })
+  call dein#add("corbob/vim-powershell", { "build": "pwsh ./build1.ps1" })
 
   "Javascript
   call dein#add("pangloss/vim-javascript")
