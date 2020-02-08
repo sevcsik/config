@@ -1,4 +1,4 @@
-Guifont Fira Code:h9
+Guifont Fira Code:h8
 hi Normal guibg=black
 set title
 augroup dirchange
