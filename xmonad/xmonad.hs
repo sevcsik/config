@@ -24,6 +24,10 @@ rotateNormal = spawn
     ++ "xinput set-prop \"ELAN2097:00 04F3:2687\" --type=float \"Coordinate Transformation Matrix\" 0 0 0 0 0 0 0 0 0"
     )
 
+keyMap = [ (( mod4Mask, xK_r), rotateLeft)
+         , (( mod4Mask .|. shiftMask, xK_r), rotateNormal)
+         , (( mod4Mask, xK_p), spawn "synapse")
+         ]
 
 main = do
     let config' = kde4Config { modMask = mod4Mask
@@ -33,13 +37,11 @@ main = do
                              , manageHook = manage'
                              , normalBorderColor = "#000000"
                              , startupHook = spawnOnce "./.xmonad/startup.sh"
-                             , terminal = "konsole"
+                             , terminal = "nvim-qt term://zsh"
                              , workspaces = workspaces'
-                             } `additionalKeys` [ (( mod4Mask, xK_r), rotateLeft)
-                                                , (( mod4Mask .|. shiftMask, xK_r), rotateNormal)
-                                                ]
+                             } `additionalKeys` keyMap
 
-    xmonad $ ewmh 
+    xmonad $ ewmh
            $ (withUrgencyHook NoUrgencyHook) 
            $ config'
 
