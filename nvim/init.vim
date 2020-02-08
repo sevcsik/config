@@ -104,7 +104,7 @@ set list
 set listchars=tab:»\ ,trail:.
 set background=dark
 colorscheme vividchalk
-set colorcolumn=120
+set colorcolumn=80
 set mouse=a
 set backspace=indent,eol,start
 set number
