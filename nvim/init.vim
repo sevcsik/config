@@ -75,6 +75,12 @@ if dein#load_state("~/.cache/dein")
   let g:syntastic_solidity_checkers = ["solium"]
   let g:syntastic_java_checkers=[]
   let g:syntastic_java_javac_config_file_enabled = 1
+  let g:LanguageClient_serverCommands = {
+    \ 'javascript': ['javascript-typescript-stdio' ],
+    \ 'json': ['vscode-json-languageserver'],
+    \ 'typescript': ['tsserver'],
+    \ 'yaml': ['node',  '~/.local/lib/node_modules/vscode-yaml-languageservice/lib/yamlLanguageService.js']
+  \}
 
   call dein#end()
   call dein#save_state()
