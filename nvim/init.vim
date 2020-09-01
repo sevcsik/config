@@ -108,8 +108,8 @@ filetype plugin indent on
 syntax enable
 set list
 set listchars=tab:»\ ,trail:.
-set background=dark
-colorscheme vividchalk
+"set background=light
+"colorscheme vividchalk
 set colorcolumn=80
 set mouse=a
 set backspace=indent,eol,start
