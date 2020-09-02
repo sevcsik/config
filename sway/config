@@ -2,9 +2,13 @@ output eDP-1 scale 1.5
 output eDP-1 pos 0 0
 output DP-1 pos 1080 0
 output HDMI-A-1 transform 270
+# output HDMI-A-1 bg ~/Képek/1186927-vertical-hd-portrait-wallpaper-1200x1920-for-1080p.jpg fill
 output HDMI-A-2 scale 1.5
+# output HDMI-A-2 bg ~/Képek/outrun-sunset-4k_66227_3840x2160.jpg fill
 input 1267:9863:ELAN2097:00_04F3:2687 map_to_output eDP-1
 input 1267:9863:ELAN2097:00_04F3:2687_Pen map_to_output eDP-1
+input * xkb_layout "gb,hu"
+input * xkb_options "grp:caps_toggle,grp_led:scroll"
 
 default_border pixel 2
 smart_borders no_gaps
@@ -19,7 +23,7 @@ bindsym $mod+colon exec i3-input
 bindsym $mod+Shift+Return exec qutebrowser
 bindsym $mod+Ctrl+l move workspace to output right
 bindsym $mod+Ctrl+h move workspace to output left
-bindsym $mod+Return exec nvim-qt term://zsh
+bindsym $mod+Return exec konsole
 bindsym $mod+p exec pavucontrol
 bindsym Pause exec swaylock
 bindsym Print exec grim -g "$(slurp)"
@@ -84,7 +88,6 @@ mode "resize" {
         # Pressing down will grow the window’s height.
         bindsym h resize shrink width 10 px or 10 ppt
         bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
         bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
@@ -107,5 +110,10 @@ bar {
 }
 
 exec synapse
+exec /usr/libexec/xfce-polkit
+exec mako
+exec eszig-cmu
+exec transmission
+exec megasync
 
 client.focused #d247ff #692480 #ffffff #ffffff #cc39bd

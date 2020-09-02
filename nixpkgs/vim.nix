@@ -39,13 +39,7 @@ let pkg = vim_configurable.customize {
             set shiftwidth=4
             set tabstop=4
 
-            let g:org_indent = 1
             let g:org_agenda_files = ['~/Dokumentumok/Jegyzetek/**/*.org']
-
-            let g:JavaComplete_Home = '~/.cache/javacomplete2'
-            if !isdirectory(g:JavaComplete_Home)
-              call mkdir(g:JavaComplete_Home)
-            endif
         '';
     };
 };
