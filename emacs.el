@@ -1,5 +1,18 @@
 (evil-mode 1)
+
+(defun setup-tide-mode ()
+  (interactive)
+  (tide-setup)
+  (tide-hl-identifier-mode +1))
+(add-hook 'typescript-mode-hook #'setup-tide-mode)
+
+(add-hook 'after-init-hook 'global-company-mode)
+(add-hook 'after-init-hook #'global-flycheck-mode)
+(setq flycheck-check-syntax-automatically '(save mode-enabled))
+
+
 (tool-bar-mode -1)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
