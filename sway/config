@@ -1,6 +1,6 @@
 output eDP-1 scale 1.0
 output eDP-1 pos 0 0
-output DP-1 pos 1080 0
+output DP-1 pos 1920 0
 output HDMI-A-1 transform 270
 # output HDMI-A-1 bg ~/Képek/1186927-vertical-hd-portrait-wallpaper-1200x1920-for-1080p.jpg fill
 output HDMI-A-2 scale 1.5

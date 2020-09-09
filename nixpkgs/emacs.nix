@@ -4,7 +4,7 @@
     cider
     clojure-mode
     direnv
-    evil-magit
+#    evil-magit
     emmet-mode
     evil
     flycheck
