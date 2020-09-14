@@ -9,6 +9,8 @@
 (add-hook 'after-init-hook 'global-company-mode)
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (setq flycheck-check-syntax-automatically '(save mode-enabled))
+(setq tramp-default-method "ssh")
+(add-to-list 'tramp-remote-path 'tramp-own-remote-path)
 
 
 (tool-bar-mode -1)
