@@ -1,4 +1,7 @@
-(add-to-list 'default-frame-alist '(font . "Fira Code Retina-15"))
+(cond
+  ((string-equal system-name "sevcsik-desktop") (add-to-list 'default-frame-alist '(font . "Fira Code Retina-15")))
+  (1 (add-to-list 'default-frame-alist '(font . "Fira Code Retina-8"))))
+
 
 (evil-mode 1)
 
