@@ -9,6 +9,7 @@
 #    evil-magit
     emmet-mode
     evil
+    fira-code-mode
     flycheck
     magit
     nix-mode

@@ -1,3 +1,5 @@
+(add-to-list 'default-frame-alist '(font . "Fira Code Retina-15"))
+
 (evil-mode 1)
 
 (defun setup-tide-mode ()
