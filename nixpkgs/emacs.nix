@@ -6,7 +6,11 @@
     clojure-mode
     company-ansible
     direnv
-#    evil-magit
+    docker
+    docker-compose-mode
+    dockerfile-mode
+    docker-tramp
+    evil-magit
     emmet-mode
     evil
     fira-code-mode
