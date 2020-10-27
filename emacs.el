@@ -2,6 +2,7 @@
 
 
 (evil-mode 1)
+(evil-magit-init)
 
 (defun setup-tide-mode ()
   (interactive)

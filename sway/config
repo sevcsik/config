@@ -2,7 +2,7 @@ output eDP-1 scale 1.0
 output eDP-1 pos 0 0
 output DP-1 pos 1920 0
 output HDMI-A-1 transform 270
-output HDMI-A-2 scale 1.5
+output HDMI-A-2 scale 2
 input 1267:9863:ELAN2097:00_04F3:2687 map_to_output eDP-1
 input 1267:9863:ELAN2097:00_04F3:2687_Pen map_to_output eDP-1
 input * xkb_layout "gb,hu"
@@ -21,7 +21,7 @@ bindsym $mod+colon exec i3-input
 bindsym $mod+Shift+Return exec qutebrowser
 bindsym $mod+Ctrl+l move workspace to output right
 bindsym $mod+Ctrl+h move workspace to output left
-bindsym $mod+Return exec "~/.nix-profile/bin/emacs --eval '(ansi-term \"/usr/bin/zsh\")'"
+bindsym $mod+Return exec ~/.nix-profile/bin/emacs --eval '(ansi-term "/usr/bin/zsh")'
 bindsym $mod+p exec pavucontrol
 bindsym Pause exec swaylock
 bindsym Print exec grim -g "$(slurp)"
