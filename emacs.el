@@ -1,4 +1,4 @@
-(add-to-list 'default-frame-alist '(font . "Fira Code Retina-8"))
+(add-to-list 'default-frame-alist '(font . "-*-terminus-*-*-*-*-12-*-*-*-*-*-*-*"))
 
 
 (evil-mode 1)
