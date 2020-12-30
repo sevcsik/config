@@ -21,7 +21,7 @@ bindsym $mod+colon exec i3-input
 bindsym $mod+Shift+Return exec qutebrowser
 bindsym $mod+Ctrl+l move workspace to output right
 bindsym $mod+Ctrl+h move workspace to output left
-bindsym $mod+Return exec ~/.nix-profile/bin/emacs --eval '(ansi-term "/usr/bin/zsh")'
+bindsym $mod+Return exec ~/.nix-profile/bin/emacs --eval '(vterm)'
 bindsym $mod+p exec pavucontrol
 bindsym Pause exec swaylock
 bindsym Print exec grim -g "$(slurp)"

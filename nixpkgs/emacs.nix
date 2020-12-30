@@ -21,6 +21,7 @@
     typescript-mode
     tide
     yaml-mode
+    vterm
   ]) ++
   (with epkgs.elpaPackages; [
     company
