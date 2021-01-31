@@ -12,7 +12,7 @@
     docker-tramp
     emmet-mode
     evil
-    evil-magit
+    evil-collection
     fira-code-mode
     flycheck
     magit

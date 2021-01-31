@@ -1,8 +1,8 @@
 (add-to-list 'default-frame-alist '(font . "-*-terminus-*-*-*-*-12-*-*-*-*-*-*-*"))
 
-
+(setq evil-want-keybinding nil)
 (evil-mode 1)
-(evil-magit-init)
+(evil-collection-init)
 
 (defun setup-tide-mode ()
   (interactive)
