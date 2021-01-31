@@ -10,16 +10,18 @@
     docker-compose-mode
     dockerfile-mode
     docker-tramp
-    evil-magit
     emmet-mode
     evil
+    evil-magit
     fira-code-mode
     flycheck
     magit
     nix-mode
     solarized-theme
+    powershell
     typescript-mode
     tide
+    vterm
     yaml-mode
     vterm
   ]) ++

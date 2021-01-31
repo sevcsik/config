@@ -1,7 +1,7 @@
 output eDP-1 scale 1.0
 output eDP-1 pos 0 0
 output DP-1 pos 1920 0
-output HDMI-A-1 transform 270
+#output HDMI-A-1 transform 270
 output HDMI-A-2 scale 2
 input 1267:9863:ELAN2097:00_04F3:2687 map_to_output eDP-1
 input 1267:9863:ELAN2097:00_04F3:2687_Pen map_to_output eDP-1
@@ -110,7 +110,7 @@ bar {
 exec synapse
 exec /usr/libexec/xfce-polkit
 exec mako
-exec eszig-cmu
+#exec eszig-cmu
 exec transmission
 exec megasync
 
