@@ -15,12 +15,17 @@
     evil-collection
     fira-code-mode
     flycheck
+    lsp-java
+    lsp-treemacs
+    lsp-ui
     magit
     nix-mode
     solarized-theme
     powershell
     typescript-mode
     tide
+    treemacs
+    treemacs-evil
     vterm
     yaml-mode
     vterm

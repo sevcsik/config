@@ -11,7 +11,7 @@ input * xkb_options "caps:escape,grp:alt_shift_toggle,grp_led:scroll"
 default_border pixel 2
 smart_borders no_gaps
 smart_gaps on
-font pango: Firacode 9
+font pango: Terminus 9
 gaps inner 20
 
 set $mod Mod4
@@ -21,7 +21,7 @@ bindsym $mod+colon exec i3-input
 bindsym $mod+Shift+Return exec qutebrowser
 bindsym $mod+Ctrl+l move workspace to output right
 bindsym $mod+Ctrl+h move workspace to output left
-bindsym $mod+Return exec ~/.nix-profile/bin/emacs --eval '(vterm)'
+bindsym $mod+Return exec zsh -c emacs
 bindsym $mod+p exec pavucontrol
 bindsym Pause exec swaylock
 bindsym Print exec grim -g "$(slurp)"
