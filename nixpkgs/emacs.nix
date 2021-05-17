@@ -2,6 +2,7 @@
 (emacsPackagesGen emacs).emacsWithPackages (epkgs:
   (with epkgs.melpaPackages; [
     ansible
+    auth-source-xoauth2
     cider
     clojure-mode
     company-ansible
@@ -19,6 +20,7 @@
     lsp-treemacs
     lsp-ui
     magit
+    mbsync
     nix-mode
     solarized-theme
     powershell
