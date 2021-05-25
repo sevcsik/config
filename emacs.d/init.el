@@ -62,8 +62,10 @@
                                       (setenv "PAGER" "cat")
                                       (setenv "TERM" "dumb")))
 
+;; Org mode GTD
 (setq org-directory "~/Org")
-(setq org-agenda-files (list "~/Org/Inbox.org"))
+(setq org-agenda-files (list "~/Org/todo.org"))
+(define-key global-map (kbd "C-c c") 'org-capture)
 
 (use-package editorconfig :init (editorconfig-mode 1))
 
