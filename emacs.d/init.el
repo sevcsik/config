@@ -62,6 +62,9 @@
                                       (setenv "PAGER" "cat")
                                       (setenv "TERM" "dumb")))
 
+(setq org-directory "~/Org")
+(setq org-agenda-files (list "~/Org/Inbox.org"))
+
 (use-package editorconfig :init (editorconfig-mode 1))
 
 (use-package treemacs :init (treemacs-resize-icons 11))
