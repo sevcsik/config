@@ -64,8 +64,15 @@
 
 ;; Org mode GTD
 (setq org-directory "~/Org")
-(setq org-agenda-files (list "~/Org/todo.org"))
 (define-key global-map (kbd "C-c c") 'org-capture)
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "DELEGATED(d)" "NEXT(n)" "HOLD(h)" "|" "DONE(x)")))
+(setq org-agenda-prefix-format
+      '((agenda . " %i %-12:c%?-12t%-6e% s")
+        (todo . " %i %-12:c %-6e")
+        (tags . " %i %-12:c")
+        (search . " %i %-12:c")))
+
 
 (use-package editorconfig :init (editorconfig-mode 1))
 
